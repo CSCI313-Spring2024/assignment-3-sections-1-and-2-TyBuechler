@@ -12,5 +12,7 @@
    </section>
 
    <section class="results">
-    <app-housinglocation [housingLocation]="housingLocation"></app-housinglocation>
-    </section>
+    @for (housingLocation of housingLocationList; track housingLocation){
+    <app-housinglocation [housingLocation]="housingLocation" ></app-housinglocation>
+}
+   </section>
